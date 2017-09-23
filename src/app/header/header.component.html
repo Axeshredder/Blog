@@ -1,0 +1,11 @@
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    
+    <ul class="nav navbar-nav">
+      <li class="active"><a>Home</a></li>
+      
+      <li *ngIf = "!service.isAuth()"><a (click) = "nav()" >Login</a></li>
+      <li *ngIf = "service.isAuth()"><a  (click) = "logout()">Logout</a></li>
+    </ul>
+  </div>
+</nav>

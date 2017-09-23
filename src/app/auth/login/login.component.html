@@ -1,0 +1,22 @@
+<div class = "container">
+<div class = "row">
+	<div class = "col-sm-12">
+		<h3>Please Login</h3>
+		<br>
+		<form (ngSubmit) = "on()" #l = "ngForm">
+			<div class = "form-group">
+				<label for = "username">Enter username</label>
+				<input type = "text" class = "form-control" name = "username" id = "username" ngModel required email #email = "ngModel">
+				<span class = "help-block" *ngIf = "!email.valid && email.touched">Please enter a valid email</span>
+				<label for = "password">Enter password</label>
+				<input type = "password" name = "password" id = "password" class = "form-control" ngModel required  #password = "ngModel">
+				<span class = "help-block" *ngIf = "!password.valid && password.touched ">Please enter a valid password</span>
+				<hr>
+				<input type = "submit" value = "login" class = "btn btn-primary" [disabled] = "!l.valid">
+				<br>
+				<h5>Haven't signed up yet?<a (click) = "reg()">Get Started</a></h5>
+			</div>
+		</form>
+	</div>
+</div>
+</div>

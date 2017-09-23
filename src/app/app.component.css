@@ -1,0 +1,29 @@
+p{
+	font-size: 20px;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-family: 'Josefin Sans' , sans-serif;
+
+}
+
+h3{
+	font-size: 40px;
+	font-family: 'Bowlby One' , cursive;
+
+}
+
+h4{
+	font-size: 20px;
+	font-style: italic;
+	font-family: 'Patrick Hand SC', cursive;
+}
+
+#com{
+	float: right;
+}
+
+*{
+	
+}
+
+

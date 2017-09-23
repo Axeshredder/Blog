@@ -1,0 +1,19 @@
+<div class = "container">
+	<div class = "row">
+	<div class = "col-sm-8">
+<form #f = "ngForm" (ngSubmit) = "onSubmit()">
+   <div class = "form-group">
+	<label for = "title">Post Title:</label>
+	<input type = "text" name = "title" id = "title" class = "form-control"ngModel><br>
+	<label for = "desc">Post:</label>
+	<textarea name = "desc" id = "desc" ngModel class = "form-control" ></textarea><br>
+	<hr>
+	<input type = "submit" class = "btn btn-primary" value = "Submit Post">
+	<button class = "btn btn-danger" (click) = "method()">Leave</button>
+	</div>
+
+
+</form>
+</div>
+</div>
+</div>
